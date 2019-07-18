@@ -5,5 +5,9 @@
  */
 
 case class Position(x: Int, y: Int, direction: Direction) {
+  def right(): Position(x, y, directionFor(direction.right).get)
+  
+  def left(): Position(x,y, directionFor(direction.left).get)
+}
 
 }
