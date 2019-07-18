@@ -16,8 +16,11 @@ case object South extends Direction("S", "W", "E")
 case object East extends Direction("E", "S", "N")
 case object West extends Direction("W", "N", "S")
 
+object Directions {
 
-asds
+	val directions: List[Direction] = List(North, South, East, West)
 
+	def directionFor(symbol: String) =
+		directions.find(d => d.current == symbol)
 
 }
