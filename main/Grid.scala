@@ -17,6 +17,15 @@ case class Grid (x: Int, y: Int) {
   private def moveSouth(currentY: Int): Int = 
     if(currentY == 0) y -1 else currentY -1;
   
+  private def moveNorth(currentY: Int): Int = 
+    if(currentY == 0) y -1 else currentY -1;
+  
+  private def moveWest(currentX: Int): Int = 
+    if(currentX == 0) x -1 else currentX -1;
+  
+  private def moveEast(currentX: Int): Int = 
+    if(currentX == 0) x -1 else currentX -1;
+  
 }
 
 }
