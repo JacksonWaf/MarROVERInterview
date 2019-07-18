@@ -17,4 +17,7 @@ case object East extends Direction("E", "S", "N")
 case object West extends Direction("W", "N", "S")
 
 
+asds
+
+
 }
