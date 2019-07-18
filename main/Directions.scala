@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 
-class Directions {
+sealed abstract class Directions {
 
 }
