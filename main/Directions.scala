@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
-sealed abstract class Directions {
+sealed abstract class Directions (currentDirection: String,
+                                rightDirection: String,
+                                leftDirection: String) {
 
 }
