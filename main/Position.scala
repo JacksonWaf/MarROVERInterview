@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 
-case class Position {
+case class Position(x: Int, y: Int, direction: Direction) {
 
 }
