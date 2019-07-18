@@ -13,6 +13,9 @@ case class Grid (x: Int, y: Int) {
           case Position(px, py, West) => position(px, moveWest(py), West)
     
   }
+  
+  private def moveSouth(currentY: Int): Int = 
+    if(currentY == 0) y -1 else currentY -1;
 }
 
 }
