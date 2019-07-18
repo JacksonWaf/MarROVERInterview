@@ -4,6 +4,16 @@
  * and open the template in the editor.
  */
 
-class MarsRover {
+class MarsRover(grid: Grid, initialPosition: Position) {
+  var currentPosition = initialPosition;
+  commands.split("").foreach(cmd =>
+			cmd match {
+				case "M" => currentPosition = grid.positionOfNextPoint(currentPosition)
+				case "R" => currentPosition = currentPosition.right()
+				case "L" => currentPosition = currentPosition.left()
+			})
+
+	def position() = currentPosition;
+}
 
 }
